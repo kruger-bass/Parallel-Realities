@@ -1,0 +1,1 @@
+This folder is for artist use - Put all your models, drawings, pictures, but try to keep it a bit organized :D
