@@ -24,18 +24,22 @@ public class Teleport : MonoBehaviour {
 		if (!colliding.Contains(other)) {
 			
 			
-			Quaternion q1 = Quaternion.FromToRotation(transform.up, OtherEnd.up);
+			Quaternion q1 = Quaternion.FromToRotation(this.transform.position, OtherEnd.position);
 			Quaternion q2 = Quaternion.FromToRotation(-transform.up, OtherEnd.up);
 			
-			Vector3 newPos = OtherEnd.position ;//+ q2 * (other.transform.position - transform.position) ;// + OtherEnd.transform.up * 2;;
+			Vector3 newPos = other.transform.position + OtherEnd.position - this.transform.position + this.transform.right
+				;//+ q2 * (other.transform.position - transform.position) ;// + OtherEnd.transform.up * 2;;
 			
 			if (other.rigidbody != null) {
-				GameObject o = (GameObject) GameObject.Instantiate(other.gameObject, newPos, other.transform.localRotation);
-				o.rigidbody.velocity = q2 * other.rigidbody.velocity;
-				o.rigidbody.angularVelocity = other.rigidbody.angularVelocity;
-				other.gameObject.SetActive(false);
-				Destroy(other.gameObject);
-				other = o.collider;
+//				GameObject o = (GameObject) GameObject.Instantiate(other.gameObject, newPos, other.transform.localRotation);
+//				o.rigidbody.velocity = q1 * other.rigidbody.velocity;
+//				o.rigidbody.angularVelocity = other.rigidbody.angularVelocity;
+//				other.gameObject.SetActive(false);
+//				Destroy(other.gameObject);
+//				other = o.collider;
+				other.transform.position = OtherEnd.position;
+				other.rigidbody.velocity = q1 * other.rigidbody.velocity;
+				other.rigidbody.angularVelocity = other.rigidbody.angularVelocity;
 			}
 			
 			OtherEnd.GetComponent<Teleport>().colliding.Add(other);
