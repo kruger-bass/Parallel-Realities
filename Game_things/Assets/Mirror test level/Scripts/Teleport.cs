@@ -22,28 +22,26 @@ public class Teleport : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if (!colliding.Contains(other)) {
-			
-			
-			Quaternion q1 = Quaternion.FromToRotation(this.transform.position, OtherEnd.position);
+			Debug.Log ("ciao");
+			//Quaternion q1 = Quaternion.FromToRotation(this.transform.position, OtherEnd.position);
 			Quaternion q2 = Quaternion.FromToRotation(-transform.up, OtherEnd.up);
-			
-			Vector3 newPos = other.transform.position + OtherEnd.position - this.transform.position + this.transform.right
-				;//+ q2 * (other.transform.position - transform.position) ;// + OtherEnd.transform.up * 2;;
+
+			//-q2 * Vector3.right to avoid spawning right inside the mirror. remove for seamless "Portal" transition
+			Vector3 newPos = OtherEnd.position + q2 * (other.transform.position - transform.position) + OtherEnd.transform.up * 2;
 			
 			if (other.rigidbody != null) {
-//				GameObject o = (GameObject) GameObject.Instantiate(other.gameObject, newPos, other.transform.localRotation);
-//				o.rigidbody.velocity = q1 * other.rigidbody.velocity;
-//				o.rigidbody.angularVelocity = other.rigidbody.angularVelocity;
-//				other.gameObject.SetActive(false);
-//				Destroy(other.gameObject);
-//				other = o.collider;
-				other.transform.position = OtherEnd.position;
-				other.rigidbody.velocity = q1 * other.rigidbody.velocity;
-				other.rigidbody.angularVelocity = other.rigidbody.angularVelocity;
+				GameObject o = (GameObject) GameObject.Instantiate(other.gameObject, newPos, other.transform.localRotation);
+				o.rigidbody.velocity = q2 * other.rigidbody.velocity;
+				o.rigidbody.angularVelocity = other.rigidbody.angularVelocity;
+				other.gameObject.SetActive(false);
+				Destroy(other.gameObject);
+				other = o.collider;
 			}
-			
-			OtherEnd.GetComponent<Teleport>().colliding.Add(other);
-			
+
+			//OtherEnd.GetComponent<Teleport>().colliding.Add(other);
+
+			//Debug.Log (q2.ToString()+" "+newPos.ToString() + " "+ other.transform.position + " " + other.transform.forward);
+
 			other.transform.position = newPos ;
 			
 			Vector3 fwd = other.transform.forward;
@@ -51,10 +49,12 @@ public class Teleport : MonoBehaviour {
 			if (other.rigidbody == null) {
 				other.transform.LookAt(other.transform.position + q2 * fwd, OtherEnd.transform.forward);
 			}
+
 		}
 	}
 	
 	void OnTriggerExit(Collider other) {
+		Debug.Log ("oh");
 		colliding.Remove(other);
 	}
 }

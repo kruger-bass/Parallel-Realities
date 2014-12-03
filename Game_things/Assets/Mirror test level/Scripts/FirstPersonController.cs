@@ -23,6 +23,7 @@ public class FirstPersonController : MonoBehaviour {
 
 		float sideRotation = mouseSensitivity * Input.GetAxis ("Mouse X");
 		transform.Rotate (0, sideRotation, 0);
+		Camera.main.transform.localRotation =  Quaternion.Euler(0, sideRotation, 0);
 
 		verticalRotation -= mouseSensitivity * Input.GetAxis ("Mouse Y");
 		verticalRotation = Mathf.Clamp (verticalRotation, -verticalRange, verticalRange);
@@ -31,8 +32,10 @@ public class FirstPersonController : MonoBehaviour {
 		float forwardSpeed = movementSpeed * Input.GetAxis ("Vertical");
 		float sideSpeed = movementSpeed * Input.GetAxis ("Horizontal");
 
-		verticalVelocity = Input.GetButtonDown ("Jump") && characterController.isGrounded ?
-			jumpSpeed :
+		verticalVelocity = characterController.isGrounded ?
+			Input.GetButton("Jump") ?
+				jumpSpeed :
+				0 :
 			verticalVelocity + Physics.gravity.y * Time.deltaTime;
 
 		Vector3 speed = new Vector3 (sideSpeed, verticalVelocity, forwardSpeed);
