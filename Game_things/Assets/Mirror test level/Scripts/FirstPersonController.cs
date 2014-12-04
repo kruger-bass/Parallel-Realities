@@ -8,6 +8,7 @@ public class FirstPersonController : MonoBehaviour {
 	public float mouseSensitivity = 3.0f;
 	public float verticalRange = 60.0f;
 	public float jumpSpeed = 1.5f;
+	public float centerHeadOffset = 1.0f;
 	float verticalRotation = 0;
 	float verticalVelocity = 0;
 	CharacterController characterController;
@@ -32,11 +33,17 @@ public class FirstPersonController : MonoBehaviour {
 		float forwardSpeed = movementSpeed * Input.GetAxis ("Vertical");
 		float sideSpeed = movementSpeed * Input.GetAxis ("Horizontal");
 
+		//Debug.Log (transform.position + " " + transform.up);
+
 		verticalVelocity = characterController.isGrounded ?
 			Input.GetButton("Jump") ?
 				jumpSpeed :
 				0 :
-			verticalVelocity + Physics.gravity.y * Time.deltaTime;
+			Physics.Raycast(transform.localPosition, transform.up, 1.1f) ?
+				-0.1f :
+				verticalVelocity + Physics.gravity.y * Time.deltaTime;
+		Debug.Log(verticalVelocity);
+
 
 		Vector3 speed = new Vector3 (sideSpeed, verticalVelocity, forwardSpeed);
 		speed = transform.rotation * speed;
