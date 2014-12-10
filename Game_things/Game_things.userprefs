@@ -1,10 +1,12 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SecuCamRotate.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Mirror test level\Scripts\SetAspectRatio.cs">
     <Files>
-      <File FileName="Assets\Mirror test level\Scripts\FirstPersonController.cs" Line="43" Column="5" />
+      <File FileName="Assets\Mirror test level\Scripts\FirstPersonController.cs" Line="45" Column="5" />
       <File FileName="Assets\Mirror test level\Scripts\Teleport.cs" Line="1" Column="1" />
-      <File FileName="Assets\SecuCamRotate.cs" Line="15" Column="41" />
+      <File FileName="Assets\Mirror test level\Scripts\CamBehavior.cs" Line="7" Column="36" />
+      <File FileName="Assets\Mirror test level\Scripts\DetectPlayer.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mirror test level\Scripts\SetAspectRatio.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

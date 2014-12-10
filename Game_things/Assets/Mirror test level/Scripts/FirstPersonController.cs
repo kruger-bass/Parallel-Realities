@@ -42,7 +42,7 @@ public class FirstPersonController : MonoBehaviour {
 			Physics.Raycast(transform.localPosition, transform.up, 1.1f) ?
 				-0.1f :
 				verticalVelocity + Physics.gravity.y * Time.deltaTime;
-		Debug.Log(verticalVelocity);
+		//Debug.Log(verticalVelocity);
 
 
 		Vector3 speed = new Vector3 (sideSpeed, verticalVelocity, forwardSpeed);
