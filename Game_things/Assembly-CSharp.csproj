@@ -46,9 +46,11 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Mirror test level\Scripts\ActivateLightSwitch.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\CamBehavior.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\ChangeColor.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\DetectPlayer.cs" />
+     <Compile Include="Assets\Mirror test level\Scripts\DisableMirrors.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\DrawAccurateFrustum.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\FillScreen.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\FirstPersonController.cs" />
