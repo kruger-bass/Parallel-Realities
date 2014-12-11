@@ -7,6 +7,7 @@ public class ActivateLightSwitch : MonoBehaviour {
 	// time = 0 for permanent switch
 	public float timeBeforeReset = 0;
 	public float maxActivationRange = 2.0f;
+	private bool countdown = false;
 	private GameObject player;
 
 	// Use this for initialization
@@ -28,19 +29,20 @@ public class ActivateLightSwitch : MonoBehaviour {
 			l.enabled = !l.enabled;
 			if (l.GetComponent (typeof(DisableMirrors)) != null) {
 				temp = (DisableMirrors)l.GetComponent (typeof(DisableMirrors));
-				temp.Switch (l.enabled);
+				temp.Switch ();
 			}
 		}
-		if (timeBeforeReset != 0) {
-			float countdown = timeBeforeReset;
-			timeBeforeReset = 0;
-			Invoke ("Switch", countdown);
+		if (countdown)
+			countdown = false;
+		else if (timeBeforeReset != 0) {
+			countdown = true;
+			Invoke ("Switch", timeBeforeReset);
 		}
 	}
 
 	void OnMouseDown() {
-		// only activate if in range and switch isn't obstructed
-		if ((transform.position - player.transform.position).sqrMagnitude <= (maxActivationRange * maxActivationRange)) {
+		// only activate if in range, switch isn't obstructed and isn't activated (ie. timed activity)
+		if (!countdown && (transform.position - player.transform.position).sqrMagnitude <= (maxActivationRange * maxActivationRange)) {
 			RaycastHit info;
 			if (Physics.Raycast (transform.position, player.transform.position - transform.position, out info)
 			    	&& info.collider.tag.Equals ("Player"))

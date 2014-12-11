@@ -17,8 +17,8 @@ public class DisableMirrors : MonoBehaviour {
 		
 	}
 
-	public void Switch (bool working) {
+	public void Switch () {
 		foreach (GameObject m in mirrors)
-			m.GetComponent<BoxCollider> ().isTrigger = working;
+			m.GetComponent<BoxCollider> ().isTrigger = !(m.GetComponent<BoxCollider> ().isTrigger);
 	}
 }
