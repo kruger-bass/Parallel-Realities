@@ -35,11 +35,12 @@ public class FirstPersonController : MonoBehaviour {
 
 		//Debug.Log (transform.position + " " + transform.up);
 
+		RaycastHit hit;
 		verticalVelocity = characterController.isGrounded ?
 			Input.GetButton("Jump") ?
 				jumpSpeed :
 				0 :
-			Physics.Raycast(transform.localPosition, transform.up, 1.1f) ?
+			Physics.Raycast(transform.localPosition, transform.up, out hit, 1.1f) && !hit.transform.gameObject.CompareTag("Player") ?
 				-0.1f :
 				verticalVelocity + Physics.gravity.y * Time.deltaTime;
 		//Debug.Log(verticalVelocity);
