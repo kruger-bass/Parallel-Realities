@@ -12,7 +12,8 @@ public class CamBehavior : MonoBehaviour {
 		//transform.Rotate(Vector3.up, rotationAngle);
 		if (rotationSpeed == 0)
 			rotationSpeed = 1.0f;
-		StartCoroutine (Rotate());
+		if (rotationHalfAngle != 0)
+			StartCoroutine (Rotate());
 	}
 
 	// (likely) not framerate independent
