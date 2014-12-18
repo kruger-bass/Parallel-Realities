@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
+     <None Include="Assets\Mirror test level\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Mirror test level\Shaders\FillZValue.shader" />
      <None Include="Assets\Mirror test level\Shaders\JustZValue.shader" />
      <None Include="Assets\Mirror test level\Shaders\MirrorShader.shader" />

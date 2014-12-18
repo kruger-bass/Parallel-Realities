@@ -22,7 +22,7 @@ public class Teleport : MonoBehaviour {
 	
 	void OnTriggerEnter(Collider other) {
 		if (!colliding.Contains(other)) {
-
+			Debug.Log ("ciao");
 			//Quaternion q1 = Quaternion.FromToRotation(this.transform.position, OtherEnd.position);
 			Quaternion q2 = Quaternion.FromToRotation(-transform.up, OtherEnd.up);
 
@@ -38,7 +38,7 @@ public class Teleport : MonoBehaviour {
 				other = o.collider;
 			}
 
-			//OtherEnd.GetComponent<Teleport>().colliding.Add(other);
+			OtherEnd.GetComponent<Teleport>().colliding.Add(other);
 
 			//Debug.Log (q2.ToString()+" "+newPos.ToString() + " "+ other.transform.position + " " + other.transform.forward);
 
@@ -54,6 +54,7 @@ public class Teleport : MonoBehaviour {
 	}
 	
 	void OnTriggerExit(Collider other) {
+		Debug.Log ("oh");
 		colliding.Remove(other);
 	}
 }

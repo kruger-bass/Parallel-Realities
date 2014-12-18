@@ -60,6 +60,7 @@
      <Compile Include="Assets\Mirror test level\Scripts\Teleport.cs" />
      <Compile Include="Assets\Mirror test level\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Splash Screen\Scripts\SplashScreen.cs" />
+     <None Include="Assets\Mirror test level\Skyboxes\_skybox info.txt" />
      <None Include="Assets\Mirror test level\Shaders\FillZValue.shader" />
      <None Include="Assets\Mirror test level\Shaders\JustZValue.shader" />
      <None Include="Assets\Mirror test level\Shaders\MirrorShader.shader" />
