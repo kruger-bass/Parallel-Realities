@@ -42,8 +42,11 @@ public class DetectPlayerNoCamera : MonoBehaviour {
 		// don't detect the player if anything's between him and the camera prop
 		// todo: better detection (right now, even a well-placed mosquito could hide the player from our camera)
 		RaycastHit info;
-		if (Physics.Raycast (cameraProp.position, player.transform.position - cameraProp.position, out info))
-			cameraProp.SendMessage ("Kill");
+		// 10 is the layer SecuCamIgnore
+		int layerMask = ~(1 << 10);
+		if (Physics.Raycast (cameraProp.position, player.transform.position - cameraProp.position, out info, Mathf.Infinity, layerMask))
+			if (info.transform.gameObject == player)
+				cameraProp.SendMessage ("Kill");
 
 	}
 }
