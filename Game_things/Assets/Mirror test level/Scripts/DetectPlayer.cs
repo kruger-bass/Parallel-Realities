@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections;
 
+//detect player using a camera object
+
 [RequireComponent(typeof(Camera))]
 public class DetectPlayer : MonoBehaviour {
 

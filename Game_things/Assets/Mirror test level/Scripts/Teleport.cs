@@ -38,7 +38,7 @@ public class Teleport : MonoBehaviour {
 				other = o.collider;
 			}
 
-			//OtherEnd.GetComponent<Teleport>().colliding.Add(other);
+			OtherEnd.GetComponent<Teleport>().colliding.Add(other);
 
 			//Debug.Log (q2.ToString()+" "+newPos.ToString() + " "+ other.transform.position + " " + other.transform.forward);
 
