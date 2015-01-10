@@ -24,9 +24,11 @@ public class DetectPlayer : MonoBehaviour {
 			                               player.collider.bounds)) {
 			// we can't see through walls!
 			RaycastHit info;
-			if (Physics.Raycast (transform.position, player.transform.position - transform.position, out info)
-					&& info.collider.tag.Equals ("Player"))
+			if (Physics.Raycast (transform.position, player.transform.position - transform.position, out info) && info.collider.tag.Equals ("Player"))
+			{
 				transform.parent.SendMessage ("Kill");
+				info.transform.parent.SendMessage("GameOver");
+			}
 		}
 
 	}

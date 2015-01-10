@@ -12,6 +12,7 @@ public class FirstPersonController : MonoBehaviour {
 	float verticalRotation = 0;
 	float verticalVelocity = 0;
 	CharacterController characterController;
+	public GUIText DeadText;
 
 	// Use this for initialization
 	void Start () {
@@ -50,5 +51,10 @@ public class FirstPersonController : MonoBehaviour {
 		speed = transform.rotation * speed;
 
 		characterController.Move (speed * Time.deltaTime);
+	}
+
+	void GameOver()
+	{
+		DeadText.text = "You are dead :(";
 	}
 }

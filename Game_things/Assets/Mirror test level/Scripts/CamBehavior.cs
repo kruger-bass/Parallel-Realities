@@ -29,12 +29,17 @@ public class CamBehavior : MonoBehaviour {
 	}
 
 	void Kill() {
-		gameOver = true;
 		Debug.Log ("you should be dead now kiddo");
+		StartCoroutine(WaitAndReset());
 	}
 
+	IEnumerator WaitAndReset() {
+		yield return new WaitForSeconds(3);
+		Application.LoadLevel (Application.loadedLevel);
+	}
+	
 	// Update is called once per frame
 	void Update () {
-
+		
 	}
 }

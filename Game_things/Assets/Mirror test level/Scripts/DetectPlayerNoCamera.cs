@@ -45,8 +45,10 @@ public class DetectPlayerNoCamera : MonoBehaviour {
 		// 10 is the layer SecuCamIgnore
 		int layerMask = ~(1 << 10);
 		if (Physics.Raycast (cameraProp.position, player.transform.position - cameraProp.position, out info, Mathf.Infinity, layerMask))
-			if (info.transform.gameObject == player)
-				cameraProp.SendMessage ("Kill");
+				if (info.transform.gameObject == player) {
+					cameraProp.SendMessage ("Kill");
+					player.SendMessage("GameOver");
+				}
 
 	}
 }
