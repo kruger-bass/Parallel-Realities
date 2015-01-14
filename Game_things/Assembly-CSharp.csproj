@@ -48,17 +48,14 @@
   <ItemGroup>
      <Compile Include="Assets\Mirror test level\Scripts\ActivateLightSwitch.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\CamBehavior.cs" />
-     <Compile Include="Assets\Mirror test level\Scripts\ChangeColor.cs" />
-     <Compile Include="Assets\Mirror test level\Scripts\DetectPlayer.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\DetectPlayerNoCamera.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\DisableMirrors.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\DrawAccurateFrustum.cs" />
-     <Compile Include="Assets\Mirror test level\Scripts\FillScreen.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\FirstPersonController.cs" />
-     <Compile Include="Assets\Mirror test level\Scripts\MirrorImages.cs" />
-     <Compile Include="Assets\Mirror test level\Scripts\SetAspectRatio.cs" />
+     <Compile Include="Assets\Mirror test level\Scripts\StageComplete.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\StartDesactivated.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\Teleport.cs" />
+     <Compile Include="Assets\Mirror test level\Scripts\ToggleActiveState.cs" />
      <Compile Include="Assets\Mirror test level\Standard Assets\Character Controllers\Sources\Scripts\MouseLook.cs" />
      <Compile Include="Assets\Splash Screen\Scripts\SplashScreen.cs" />
      <Compile Include="Assets\Windy_regions\windyScript.cs" />

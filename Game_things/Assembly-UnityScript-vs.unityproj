@@ -46,8 +46,6 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Mirror test level\Scripts\MirroredFollow.js" />
-     <Compile Include="Assets\Mirror test level\Scripts\Reflect(old).js" />
      <Compile Include="Assets\Mirror test level\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" />
      <Compile Include="Assets\Mirror test level\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" />
      <Compile Include="Assets\Mirror test level\Standard Assets\Character Controllers\Sources\Scripts\PlatformInputController.js" />

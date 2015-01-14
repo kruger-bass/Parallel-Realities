@@ -57,4 +57,9 @@ public class FirstPersonController : MonoBehaviour {
 	{
 		DeadText.text = "You are dead :(";
 	}
+
+	void StageOver()
+	{
+		DeadText.text = "You avoided being discovered. For now.";
+	}
 }
