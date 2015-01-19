@@ -1,12 +1,14 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Mirror test level\Scripts\CamBehavior.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Mirror test level\Scripts\ToggleActiveState.cs">
     <Files>
+      <File FileName="Assets\Mirror test level\Scripts\ToggleActiveState.cs" Line="47" Column="42" />
       <File FileName="Assets\Mirror test level\Scripts\FirstPersonController.cs" Line="1" Column="1" />
       <File FileName="Assets\Mirror test level\Scripts\ActivateLightSwitch.cs" Line="1" Column="1" />
       <File FileName="Assets\Mirror test level\Scripts\StartDesactivated.cs" Line="1" Column="1" />
-      <File FileName="Assets\Mirror test level\Scripts\ToggleActiveState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Mirror test level\Scripts\CamBehavior.cs" Line="36" Column="2" />
+      <File FileName="Assets\Mirror test level\Scripts\CamBehavior.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mirror test level\Scripts\StageComplete.cs" Line="1" Column="1" />
+      <File FileName="Assets\Mirror test level\Scripts\DetectPlayerNoCamera.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

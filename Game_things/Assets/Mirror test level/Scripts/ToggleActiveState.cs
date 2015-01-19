@@ -3,15 +3,16 @@ using System.Collections;
 
 public class ToggleActiveState : MonoBehaviour {
 
-	private GameObject[] lights = null;
+	private GameObject[] togLights = null;
 	public float timeBeforeReset = 0;
+	public GameObject generalLight;
 	private bool countdown = false;
 
 	//awake is called before ANY Start function. 
 	//We'll use it so we have a list of objects BEFORE they start desactivating themselves 
 	//with the StartDesactivated script.
 	void Awake(){
-		lights = GameObject.FindGameObjectsWithTag("Light");
+		togLights = GameObject.FindGameObjectsWithTag("togLight");
 	}
 
 	// Use this for initialization
@@ -28,7 +29,7 @@ public class ToggleActiveState : MonoBehaviour {
 		if (countdown == false){
 			countdown = true;
 			//		DisableMirrors temp = null;
-			foreach (GameObject l in lights) {
+			foreach (GameObject l in togLights) {
 				Debug.Log ("The object " + l.name + " is " + l.activeSelf);
 				l.SetActive(!(l.activeSelf));
 				//			if (l.GetComponent (typeof(DisableMirrors)) != null) {
@@ -42,8 +43,12 @@ public class ToggleActiveState : MonoBehaviour {
 
 	IEnumerator lightCD() {
 		yield return new WaitForSeconds(timeBeforeReset);
+		for (int i = 0; i < 10; i++) {
+			yield return new WaitForSeconds(0.1f);
+			generalLight.light.enabled = !generalLight.light.enabled;
+		}
 		countdown = false;
-		foreach (GameObject l in lights) {
+		foreach (GameObject l in togLights) {
 			Debug.Log ("The object " + l.name + " is " + l.activeSelf);
 			l.SetActive(!(l.activeSelf));
 		}
