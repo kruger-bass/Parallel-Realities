@@ -4,6 +4,7 @@ using System.Collections;
 public class ToggleActiveState : MonoBehaviour {
 
 	private GameObject[] togLights = null;
+	private GameObject[] movCam = null;
 	public float timeBeforeReset = 0;
 	public GameObject generalLight;
 	private bool countdown = false;
@@ -13,6 +14,7 @@ public class ToggleActiveState : MonoBehaviour {
 	//with the StartDesactivated script.
 	void Awake(){
 		togLights = GameObject.FindGameObjectsWithTag("togLight");
+		movCam = GameObject.FindGameObjectsWithTag ("movCam");
 	}
 
 	// Use this for initialization
@@ -53,4 +55,12 @@ public class ToggleActiveState : MonoBehaviour {
 			l.SetActive(!(l.activeSelf));
 		}
 	}
+
+	void cameraMoveBegin (){
+		foreach (GameObject c in movCam) {
+			c.BroadcastMessage("RotateCamera");
+		}
+		
+	}
+
 }

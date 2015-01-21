@@ -46,6 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Mirror test level\Scripts\ActivateCameraMovementSwitch.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\ActivateLightSwitch.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\CamBehavior.cs" />
      <Compile Include="Assets\Mirror test level\Scripts\DetectPlayerNoCamera.cs" />
