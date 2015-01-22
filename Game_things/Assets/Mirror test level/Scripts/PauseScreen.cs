@@ -22,11 +22,12 @@ public class PauseScreen : MonoBehaviour {
 	void Update () {
 		if (Input.GetKeyDown (KeyCode.Escape) && !isPaused) {
 			isPaused = true;
+			Screen.showCursor = true;
+			Screen.lockCursor = false;
 			oldTimeScale = Time.timeScale;
 			Time.timeScale = 0;
 			player.GetComponent<FirstPersonController> ().enabled = false;
 			player.GetComponent<ToggleActiveState> ().enabled = false;
-			Screen.showCursor = true;
 			Pause.enabled = true;
 		} else if (Input.GetKeyDown (KeyCode.Escape) && isPaused)
 			exitPause ();
@@ -38,10 +39,12 @@ public class PauseScreen : MonoBehaviour {
 		player.GetComponent<FirstPersonController>().enabled = true;
 		player.GetComponent<ToggleActiveState>().enabled = true;
 		Screen.showCursor = false;
+		Screen.lockCursor = true;
 		Pause.enabled = false;
 		}
 
 	public void restartLevel(){
+		exitPause ();
 		Application.LoadLevel (Application.loadedLevelName);
 		}
 

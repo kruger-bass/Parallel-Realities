@@ -1,0 +1,239 @@
+Initialize engine version: 4.6.1f1 (d1db7a1b5196)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GT 640M (ID=0xfd2)
+    Vendor:   NVIDIA
+    VRAM:     965 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.063 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: F:\Documentos\Videogame Design and Programming\Parallel-Realities\Game_things\Builds\V1.0\Win32\Build1.0_Data\Managed\System.dll (this message is harmless)
+UnloadTime: 0.269607 ms
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 228.
+Total: 1.258038 ms (FindLiveObjects: 0.015000 ms CreateObjectMapping: 0.011447 ms MarkObjects: 0.185528 ms  DeleteObjects: 0.019342 ms)
+
+UnloadTime: 7.068228 ms
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 159.
+Total: 1.872650 ms (FindLiveObjects: 0.015000 ms CreateObjectMapping: 0.016579 ms MarkObjects: 0.211975 ms  DeleteObjects: 0.016184 ms)
+
+WARNING: Shader Unsupported: 'Reflective/VertexLit' - Pass '' shader state not supported
+UnloadTime: 0.441714 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 975.
+Total: 0.960009 ms (FindLiveObjects: 0.037105 ms CreateObjectMapping: 0.013815 ms MarkObjects: 0.202896 ms  DeleteObjects: 0.004342 ms)
+
+I see you are pressing the 'e' key
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 01 is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 02 is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 02 is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 03 is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 03 is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 01 is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+I see you are pressing the 'e' key
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+I see you are pressing the 'e' key
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 01 is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 02 is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 02 is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 03 is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 03 is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is False
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Spotlight is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Light 01 is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+The object Cone is True
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+'e' key pressed. Moving Cameras.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+player completed stage.
+ 
+(Filename: C:/BuildAgent/work/d63dfc6385190b60/artifacts/StandalonePlayerGenerated/UnityEngineDebug.cpp Line: 49)
+
+UnloadTime: 3.086083 ms
+Unloading 1 Unused Serialized files (Serialized files now loaded: 0 / Dirty serialized files: 0)
+
+Unloading 56 unused Assets to reduce memory usage. Loaded Objects now: 239.
+Total: 2.797922 ms (FindLiveObjects: 0.026052 ms CreateObjectMapping: 0.022105 ms MarkObjects: 0.354871 ms  DeleteObjects: 0.678954 ms)
+

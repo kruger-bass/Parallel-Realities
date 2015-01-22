@@ -11,11 +11,13 @@ public class GameStart : MonoBehaviour {
 	void Awake () {
 		MainMenuCanvas = normalCanvas.GetComponent<Canvas> ();
 		Credit = creditCanvas.GetComponent<Canvas> ();
+		Screen.showCursor = true; // MAKING SURE CURSOR IS VISIBLE
+		Screen.lockCursor = false;
 	}
 
 	void Start()
 	{	
-		Screen.showCursor = enabled; // MAKING SURE CURSOR IS VISIBLE
+
 	}
 	
 	// Update is called once per frame

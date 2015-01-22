@@ -6,7 +6,9 @@ public class TextIntro : MonoBehaviour {
 	
 	public GameObject textBox;
 	string[] fraseInicial = new string[9];
+	bool finishWriting = false;
 	Text text;
+	float finishTime;
 	
 	void Start () {
 		text = textBox.GetComponent<Text>();
@@ -18,7 +20,7 @@ public class TextIntro : MonoBehaviour {
 		fraseInicial [5] = "Interact with things using E\n\n";
 		fraseInicial [6] = "...and make good use of the mirror world.\n";
 		fraseInicial [7] = "Only walking on these parallel realities we can escape.\n";
-		fraseInicial [8] = "Now, wake up and take care to not be seen.";
+		fraseInicial [8] = "Now, wake up and be careful. Don't let them see you.";
 		StartCoroutine ("write");
 	}
 	
@@ -26,13 +28,13 @@ public class TextIntro : MonoBehaviour {
 	void Update () {
 		Color textColor = text.color;
 		float ratio;
-		if (Time.time > 45) { // fade away code
-			ratio = (Time.time-45)/5;
-			textColor.a = Mathf.Lerp(1,0, ratio);
+		if (finishWriting) { // fade away code
+			ratio = (Time.time - finishTime) / 5;
+			textColor.a = Mathf.Lerp (1, 0, ratio);
 			text.color = textColor;
+			if (Time.time > finishTime + 5)
+				Application.LoadLevel (3);
 		}
-		if (Time.time > 53)
-			Application.LoadLevel (3);
 	}
 
 	IEnumerator write(){ 
@@ -43,5 +45,7 @@ public class TextIntro : MonoBehaviour {
 			}
 			yield return new WaitForSeconds (1f);
 		}
+		finishTime = Time.time;
+		finishWriting = true;
 	}
 }

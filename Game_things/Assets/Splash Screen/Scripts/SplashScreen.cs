@@ -29,7 +29,7 @@ public class SplashScreen : MonoBehaviour {
 		yield return new WaitForSeconds(secs);
 		pgc.SetActive(false);
 
-		yield return new WaitForSeconds(secs);
+//		yield return new WaitForSeconds(secs);
 
 		Application.LoadLevel(next_scene);
 	}
