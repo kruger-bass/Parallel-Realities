@@ -17,6 +17,7 @@ public class FirstPersonController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Screen.lockCursor = true;
+		Screen.showCursor = false;
 		characterController = GetComponent<CharacterController> ();
 	}
 	
@@ -55,7 +56,7 @@ public class FirstPersonController : MonoBehaviour {
 
 	void GameOver()
 	{
-		DeadText.text = "You are dead :(";
+		DeadText.text = "You have been discovered.\nThis was your last chance to escape...";
 	}
 
 	void StageOver()
