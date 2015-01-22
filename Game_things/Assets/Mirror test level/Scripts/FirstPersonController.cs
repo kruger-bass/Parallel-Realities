@@ -61,6 +61,6 @@ public class FirstPersonController : MonoBehaviour {
 
 	void StageOver()
 	{
-		DeadText.text = "You avoided being discovered. For now.";
+		DeadText.text = "Yes! We found a door.\nJust hope this take us to a exit...";
 	}
 }

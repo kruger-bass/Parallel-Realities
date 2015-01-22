@@ -8,10 +8,15 @@ public class StageComplete : MonoBehaviour {
 		if (other.tag == "Player") {
 			Debug.Log("player completed stage.");
 			other.BroadcastMessage("StageOver");
+			StartCoroutine("finishLevel");
 			// Need new levels!
-	//		Application.LoadLevel();
 		}
 
+	}
+
+	IEnumerator finishLevel(){
+		yield return new WaitForSeconds(5);
+		Application.LoadLevel(1);
 	}
 
 
